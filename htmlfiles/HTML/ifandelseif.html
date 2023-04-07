@@ -1,0 +1,125 @@
+<html>
+<head><title> Title if else </title>
+    <!-- <body>  
+        <input type="button" name="button" value="press" onClick="myswitch()" />
+        </body> -->
+
+
+
+<script>
+//    function myswitch(){
+// var a=20;
+// if(a==10){
+// document.write("a is equal to 10");
+// }
+// else if(a==20) {
+// document.write("a is not equal to 20");
+// }
+
+// else { document.write("a is not equal to 10 or 20"); 
+//     }
+//    }
+
+
+
+
+
+
+
+for(var i=0; i<5; i++) { 
+document.write("count: "+ i +"<br/>"); }
+
+
+
+// using for loop down count
+for ( var i = 5; i >0; i--) {
+document.write("count: "+ i +"<br/>"); }
+
+// Using foreach statement
+colors = ['blue', 'green', 'white'];
+colors.forEach(function(item){ 
+document.write("item: "+ item +"<br/>");
+});
+
+
+</script>
+
+
+
+
+
+
+<script>
+
+
+//while loop – check  condition and execute loop statements
+var i = 0; 
+while(i<10) { 
+document.write(i +"<br/>"); 
+i++; 
+}
+//do while loop – execute  statement and check condition if not exit loop
+var i = 0;
+do {
+    document.write(i +"<br/>"); 
+ i++;
+}while (i < 5); 
+
+
+//Continue  skip the loop statements once for condition and goes to top again to check.
+var i = 10;
+While( i < 5) {
+If( i == 3) continue;   
+//skip statements below & goes to top again
+document.write(i +"<br/>"); 
+}
+
+</script>
+
+<br></br>
+
+
+
+<script>
+
+//Switch Statement is useful when checking for multiple conditions.
+
+var dateobj=new Date()   // use date object 
+var today=dateobj.getDay()  // get day of week 
+switch(today){
+case 1: document.write('Monday');
+    break ;
+case 2: document.write('Tuesday') ; 
+   break;
+case 3:document.write('wednesday.');break;
+case 4: document.write('thursday.') ; break;
+case 5: document.write('friday.') ; break;
+case 6: document.write('Saturday'); break;
+case 0: document.write('sunday'); break;
+Default:  document.write('Do Nothing'); break;
+}
+</script>
+<br></br>
+<script>
+
+// conditional (ternary) operator Statement
+// This operator that takes 3 operands: a condition followed by a question mark , then an expression to execute if the condition is true followed by a colon (:), and finally the expression to execute if the condition is false.
+
+A=5;
+B=10;
+ A>B ? document.write('A') : document.write('B'); 
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+</html>
+
+
+

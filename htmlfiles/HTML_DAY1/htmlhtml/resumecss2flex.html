@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header,
+        article,
+        aside,
+        footer{
+            border :1px solid black;
+        }
+        header{
+            height: 75px;
+            }
+
+        main{
+            display: flex;
+            flex-direction: row;
+            flex:auto;
+            background-color: mistyrose;
+            justify-content: center;
+        }
+        article{
+            width: 100px;
+        }
+        
+        
+        footer{
+            height: 50px;
+        }
+    </style>
+
+<body>
+    <header>
+         <h1> heading </h1>
+    </header>
+    <main>
+    <aside>recent history</aside>
+    <article> my credentials </article>
+    <aside> my testimonials</aside>
+</main>
+</body>
+</html>

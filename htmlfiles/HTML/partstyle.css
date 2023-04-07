@@ -1,0 +1,58 @@
+
+
+.portal{
+    width: 100%;
+
+    height: 50px;
+    
+}
+.header{
+    width: 100%;
+    height: 100px;
+}
+.header1{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.header2{
+    width: 80%;
+    height: 100%;
+    float: left;
+    background-color:white;
+}
+.footer{
+    height: 100px;
+    background-color: lightpink;
+}
+.ma{
+    color: blue;
+    background-color: wheat;
+    font-size: 16px;
+}
+.menu {  float:left; width: 97%;  height: 60px;  color:black;font-size:30px ;margin-top:0px; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:blue;text-align: center;font-size:22px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:azure; }
+
+
+.menu li ul li a:hover{
+background:pink; 
+}
+
+
+.navcontent{  float:left; height:500px; width:100%;  margin-top:-30px; margin-top:30px;}
+.nav { float:left; height:500px; width:20%;  background-color:rgb(218, 119, 134); color:white;}
+.content { float:left; height:500px; width:80%;  background-color:white; color:white; text-align:center;}
+
+
+
+
+
+
+

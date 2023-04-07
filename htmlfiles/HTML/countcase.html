@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            function countcase(word){
+                //word = $(word);
+                var upper=0;
+                var lower=0;
+                word1=word;
+            
+                for(var i=0;i<word.length;i++){
+                    if(word1[i].toUpperCase()==word[i]) {
+                        upper=upper+1;
+                    }
+                    else{
+                        lower=lower+1;
+                    }
+            
+                }
+            
+                document.write("Upper = " + upper+"<br/>");
+                document.write("Lower = " + lower);
+            }
+                countcase("HelloWorLdD");
+            </script>
+            
+</body>
+</html>

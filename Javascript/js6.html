@@ -1,0 +1,55 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+// var person=new object();
+// person.name="John doe";
+// person.age=34;
+// person.city="New York";
+// console.log(person);
+
+
+// var data={
+//     name:"John doe",
+//     age:34,
+//     city:"New York"
+// };
+
+// console.log(data.name);
+// console.log(data.age);
+// console.log(data.city);
+// data.city="Boston";
+// console.log( data.namedata.city);
+
+// data["age"]=35;
+// console.log(data.age);
+
+var pets=[
+
+{name:"Bruno" ,type:"dog",breed:"GoldenRetriever"},
+{name: "Katerina"   ,type:"cat" ,breed:"Persian",age:"2"},
+{name:"Daisy",type:"Butterfly",breed:"Wild"}
+];
+
+console.log(pets);
+pets[1]["age"]=3;
+console.log(pets[1]);
+
+pets.push({name:"spirit",type:"horse",age:"4"});
+console.log(pets);
+
+pets.forEach(function(pet){console.log(pet);});
+pets.forEach(pet=>{console.log(pets)});
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

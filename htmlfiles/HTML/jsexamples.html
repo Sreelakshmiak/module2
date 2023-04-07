@@ -1,0 +1,110 @@
+<html>
+
+<script>
+    function factorial(i){
+        if(i==1)
+        return 1;
+        else 
+        return i*factorial(i-1);
+    }
+    document.write(factorial(5)+"<br/>");
+    </script>
+  
+   
+   <br></br>
+   <br></br>
+   <script>
+    function countdown(n){
+        if(n==0){
+            document.write(n);
+        return  n;
+        }
+        else {
+            document.write(n+"<br/>");
+        countdown(n-1);
+        }
+    }
+
+    countdown(10);
+
+</script> 
+
+
+   
+<br></br>
+<br></br>
+<script>
+ function countup(n){
+     if(n==10){
+         document.write(n);
+     return  n;
+     }
+     else {
+         document.write(n+"<br/>");
+     countup(n+1);
+     }
+ }
+
+ countup(1);
+
+
+
+
+
+</script> 
+
+<br></br>
+
+<script>
+
+
+    function prime(n){
+        for(i=2;i<=n;i++){
+            flag=1;
+            for(j=2;j<=i/2;j++)
+            {
+                if(i%j==0){
+                    
+                    flag=0;
+                    break;
+                }
+            }
+            if(flag==1)
+                document.write(i+"<br/>");
+
+            
+
+        }
+    }
+    prime(25);
+
+</script>
+
+</script>
+
+<script>
+    function fibonacci(n){
+        if(n<=1){
+        
+            return n;
+        }
+        else 
+            
+        return (fibonacci(n-1)+fibonacci(n-2));
+}
+    for(i=0;i<7;i++)
+    {
+    document.write(fibonacci(i));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,97 @@
+
+<html>
+    <body>
+        <script>
+function reverse(str)
+{
+    for(var i=1;i<=str.length;i++){
+        document.write(str[str.length-i]);
+    }
+    
+    }
+    reverse("sreelakshmiak")
+        </script>
+
+
+
+    <body>
+
+        <br></br>
+        <script>
+           
+function sort(arr)
+{
+    var i,j;
+    for(i=0;i<=arr.length;i++)
+     {
+        for (j = i + 1; j <= arr.length; j++)
+            if (arr[j] < arr[i]) 
+            {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+    }
+ return arr;
+}
+array=[100,50,4,18,68];
+document.write("After sort: "+sort(array));
+</script>
+</body>
+
+<body>
+    <script>
+function poly(str){
+var back,fwd;
+for(var i=0;i<str.length;i++) {
+    back = str[(str.length - 1)-i];
+    fwd = str[i];
+    if(back != fwd)
+    return false;
+}
+return true;
+}
+if(poly("malayalam"))
+document.write("Word is palindrome");
+else
+document.write("Word is not palindrome");
+
+</script>
+</body>
+<br></br>
+<script>
+    function checkUpperLowerCaseString(str) {
+
+var len =  str.length;
+lowercount=0;
+uppercount=0;
+
+for ( var i =0; i < len; i++) {
+
+ // console.log(str[i])  ;
+    if(checkupper(str[i]))    uppercount++;
+
+    else lowercount++;
+
+}
+
+
+document.write("uppercount:", uppercount);
+document.write("lowecount:", lowercount);
+
+}
+
+function checkupper(c) {
+
+    if( c >='A'  && c<='Z')  return true;
+
+}
+checkUpperLowerCaseString("AminAjAA");
+
+</script>
+
+
+
+
+</html>
+    

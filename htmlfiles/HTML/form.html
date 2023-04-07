@@ -1,0 +1,265 @@
+<!-- validation -->
+<html>
+	<head>
+		<title> Validations </title>
+		<script>
+			function validate()
+				{
+				mcname   = document.getElementById("name").value ;
+				mcchk    = document.getElementById("chk").checked;
+				mcphone  = document.getElementById("phone").value;
+				mcsalary = document.getElementById("salary").value;
+				mcchk1   = document.getElementById("chk1").checked;
+
+				mclength = mcphone.length;
+				
+				if(mcname == "")
+					{
+					alert("Name Cannot Be Blank.");
+					document.getElementById("name").focus();
+					}
+					
+				if(mcchk == false)
+					{
+					alert("Select Gender");
+					}
+				
+				if(mcphone == "")
+					{
+					alert("Phone No Cannot Be Blank");
+					document.getElementById("phone").focus();
+					}
+				
+				if(mclength < 10 || mclength > 10)
+					{
+					alert("Enter 10 digit Phone No");
+					}
+					
+				if(mcchk1 == false)
+					{
+					alert("If You Want To Submit Detail Please tick the Check Box")
+					document.getElementById("chk1").focus();
+					}
+				
+					
+				mcsalary1 = parseInt(mcsalary);
+				
+			
+				//alert(mcsalary1);
+				}
+		</script>
+	</head>
+	<body>
+		<table align="center" border="1" bgcolor="white">
+			<tr>
+				<td>
+					Name
+				</td>
+				<td>
+					<input type="text" id="name" size="15" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					Degree 
+				</td>
+				<td>
+					<select id ="degree">
+						<option> select </option>
+						<option> BE  </option>
+						<option> MBA </option>
+						<option> BSC </option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					Gender 
+				</td>
+				<td>
+				male  <input type="radio" id="chk" name="chk" />
+				Female<input type="radio" id="chk" name="chk" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					Phone No
+				</td>
+				<td>
+					<input type="text" id="phone" size="15" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					Email Id
+				</td>
+				<td>
+					<input type="text" id="email" size="15" />
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Salary
+				</td>
+				<td>
+					<input type="text" id="salary" size="15" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">
+					<input type="checkbox" id="chk1" size="15" />
+				</td>
+				<td>
+					Do You Want to Submit Details
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan='2' align="center">
+					<input type="button" id="button" onclick="validate()" value="Validate"/>
+				</td>
+			</tr>
+		</table>
+	
+	</body>
+</html>
+<br></br>
+<br></br>
+
+
+<!-- more ui elements -->
+
+
+
+<form>
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+</form>
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+</form>
+
+
+<form>
+  Quantity:
+  <input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+
+
+<form>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+</form>
+
+<form>
+  E-mail:
+  <input type="email" name="email">
+</form>
+
+
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+<form>
+<input type="file" name="f" />
+
+</form>
+
+<form>
+<div class="slider">
+<input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value">
+<p id="rangeValue">100</p>
+</div>
+</form>
+
+<form>
+<label>progress</label>
+<progress value="43" max="100">
+
+</progress>  
+</form>
+
+
+
+<!--  How to use fieldset -->
+
+<br></br>
+
+<br></br>
+<br></br>
+
+
+<title>HTML legend Tag</title>
+</head>
+<body style="background-color:rgb(255, 253, 253);">
+<form>
+ <fieldset>
+  <legend>Details</legend>
+  <table>
+ <tr><td align="right">  Student Name:</td><td> <input type="text"></td></tr>
+  <tr><td align="right">Course Name:</td><td><input type="text"><br />
+  <tr><td align="right">Subjects:</td><td><input type="url" name="websitelink">
+  </table>
+ </fieldset>
+</form>
+
+
+
+
+
+<!-- using audio -->
+
+
+<audio controls>
+<!--  <source src="horse.ogg" type="audio/ogg">  -->
+  <source src="bhajan.mp3" type="audio/mpeg"> 
+<!-- <source src="speech.wav" type="audio/wav"> -->
+Your browser does not support the audio element.
+</audio>
+
+
+<!-- use youtube video -->
+
+
+    <h2>Steve Jobs - How to Live before You Die</h2>
+    <p>At his Stanford University commencement speech, Steve Jobs, CEO and co-founder of Apple and Pixar, urges us to pursue our dreams and see the opportunities in life's setbacks - including death itself.</p>
+    <iframe width="500" height="320" src="https://www.youtube.com/embed/lcZDWo6hiuI">
+    </iframe>
+ 
+
+<!-- use video -->
+<br></br>
+  <video id="Video2" loop autoplay controls >
+           <source src="video/2.mp4" type="video/mp4" /> 
+          
+       </video> 
+
+    </body>
+    </html>

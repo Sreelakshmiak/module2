@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+        }
+        header{
+            background-color: antiquewhite;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+
+
+<body >
+
+    <h2 align="center">Resume</h2>
+   <img  src="images/flower.jpg"  align="center" alt="logo" width="200" height="150" >
+   
+   
+   <header> <h2> Sreelakshmi AK</h2>
+    <h3> From   :kannur, kerala</h3>
+    <h3> Age    : 22</h3>
+    <h3> Gender : Female</h3>
+</header>
+<main>
+    <h2> Education details </h3>
+    <h3> Primary education : 10 <sup>th</sup> in St. joseph high school </h3>
+    <h3> Secondary education : 12 <sup>th</sup> in MHSS </h3>
+    <h3> Degree : BTECH in VJEC </h3>
+</main>
+<footer>
+    Contact : 245277@ust.com
+</footer>   
+</body>
+</head>
+</html>
